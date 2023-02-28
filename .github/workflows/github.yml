@@ -10,9 +10,9 @@ name: Java CI with Maven
 
 on:
   push:
-    branches: [ "javax-jaxb" ]
+    branches: [ "jakarta-jaxb" ]
   pull_request:
-    branches: [ "javax-jaxb" ]
+    branches: [ "jakarta-jaxb" ]
 
 jobs:
   build:

@@ -6,10 +6,10 @@
     <parent>
         <groupId>no.kith.xmlstds</groupId>
         <artifactId>reactor</artifactId>
-        <version>3.0.0-SNAPSHOT</version>
+        <version>4.0.0-SNAPSHOT</version>
     </parent>
     <artifactId>er-m42-2006-10-06</artifactId>
-    <version>3.0.0-SNAPSHOT</version>
+    <version>4.0.0-SNAPSHOT</version>
 
     <build>
         <plugins>
