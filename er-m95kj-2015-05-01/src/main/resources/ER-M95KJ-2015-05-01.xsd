@@ -4,21 +4,19 @@ eResept versjon 2.5
 M9.5 Forespørsel om tilgjengelige resepter på pasient - Kjernejournal
 2015-05-01
 -->
-<schema
-        xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.kith.no/xmlstds/eresept/m95kj/2015-05-01"
-        elementFormDefault="qualified" attributeFormDefault="unqualified">
-    <element name="M95KJ">
-        <annotation>
-            <documentation>Forespørsel fra rekvirent om resepter på pasient.</documentation>
-        </annotation>
-        <complexType>
-            <sequence>
-                <element name="Fnr" type="string" minOccurs="1">
-                    <annotation>
-                        <documentation>Fødselsnummer på pasienten det søkes etter resepter på</documentation>
-                    </annotation>
-                </element>
-            </sequence>
-        </complexType>
-    </element>
+<schema xmlns:m95="http://www.kith.no/xmlstds/eresept/m95kj/2015-05-01" xmlns:xsd="http://www.w3.org/2001/XMLSchema.xsd" xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.kith.no/xmlstds/eresept/m95kj/2015-05-01" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<element name="M95KJ">
+		<annotation>
+			<documentation>Forespørsel fra rekvirent om  resepter på pasient. </documentation>
+		</annotation>
+		<complexType>
+			<sequence>
+				<element name="Fnr" type="string" minOccurs="1">
+					<annotation>
+						<documentation>Fødselsnummer på pasienten det søkes etter resepter på</documentation>
+					</annotation>
+				</element>
+			</sequence>
+		</complexType>
+	</element>
 </schema>

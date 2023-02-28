@@ -1,0 +1,3 @@
+REWRITE_SYSTEM "file:/kith.xsd" "maven:no.kith.xmlstds.xmlbeans:kith!/kith.xsd"
+REWRITE_SYSTEM "file:/felleskomponent1.xsd" "maven:no.kith.xmlstds.xmlbeans:felleskomponent1!/felleskomponent1.xsd"
+REWRITE_SYSTEM "file:/Forskrivning-2010-04-01.xsd" "maven:no.kith.xmlstds.xmlbeans:forskrivning-2010-04-01!/Forskrivning-2010-04-01.xsd"

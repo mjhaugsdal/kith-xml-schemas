@@ -4,26 +4,23 @@ eResept versjon 2.5
 M9.6 Reseptliste - Kjernejournal
 2015-05-01
  -->
-<schema
-        xmlns="http://www.w3.org/2001/XMLSchema"
-        targetNamespace="http://www.kith.no/xmlstds/eresept/m96kj/2015-05-01" elementFormDefault="qualified"
-        attributeFormDefault="unqualified">
-    <import namespace="http://www.kith.no/xmlstds" schemaLocation="../../../../kith/src/main/resources/kith.xsd"/>
-    <element name="M96KJ">
-        <complexType>
-            <sequence>
-                <element name="Listeelement" minOccurs="0" maxOccurs="unbounded">
-                    <complexType>
-                        <sequence>
-                            <element name="ReseptId" type="string">
-                                <annotation>
-                                    <documentation>Vedlegg MsgHead</documentation>
-                                </annotation>
-                            </element>
-                        </sequence>
-                    </complexType>
-                </element>
-            </sequence>
-        </complexType>
-    </element>
+<schema xmlns:m96="http://www.kith.no/xmlstds/eresept/m96kj/2015-05-01" xmlns:xsd="http://www.w3.org/2001/XMLSchema.xsd" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:kith="http://www.kith.no/xmlstds" targetNamespace="http://www.kith.no/xmlstds/eresept/m96kj/2015-05-01" elementFormDefault="qualified" attributeFormDefault="unqualified">
+    <import namespace="http://www.kith.no/xmlstds" schemaLocation="file:/kith.xsd"/>
+	<element name="M96KJ">
+		<complexType>
+			<sequence>
+				<element name="Listeelement" minOccurs="0" maxOccurs="unbounded">
+					<complexType>
+						<sequence>
+							<element name="ReseptId" type="string">
+								<annotation>
+									<documentation>Vedlegg MsgHead</documentation>
+								</annotation>
+							</element>
+						</sequence>
+					</complexType>
+				</element>
+			</sequence>
+		</complexType>
+	</element>
 </schema>

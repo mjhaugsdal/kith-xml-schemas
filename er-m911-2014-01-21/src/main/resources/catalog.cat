@@ -1,0 +1,1 @@
+REWRITE_SYSTEM "file:/kith.xsd" "maven:no.kith.xmlstds.xmlbeans:kith!/kith.xsd"

@@ -14,13 +14,11 @@
     <packaging>pom</packaging>
 
     <properties>
-        <version.java>17</version.java>
+        <version.java>1.8</version.java>
         <maven.compiler.source>${version.java}</maven.compiler.source>
         <maven.compiler.target>${version.java}</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <version.xmlbeans>5.1.1</version.xmlbeans>
-        <version.log4j-core>2.20.0</version.log4j-core>
     </properties>
 
     <modules>
@@ -127,32 +125,46 @@
 
     <dependencies>
         <dependency>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>xmlbeans-maven-plugin</artifactId>
+            <version>2.3.3</version>
+        </dependency>
+        <dependency>
             <groupId>org.apache.xmlbeans</groupId>
             <artifactId>xmlbeans</artifactId>
-            <version>${version.xmlbeans}</version>
+            <version>3.1.0</version>
         </dependency>
-    </dependencies>
 
+    </dependencies>
     <build>
         <pluginManagement>
             <plugins>
                 <plugin>
-                    <groupId>org.apache.xmlbeans</groupId>
-                    <artifactId>xmlbeans</artifactId>
-                    <version>${version.xmlbeans}</version>
+                    <!-- http://mojo.codehaus.org/xmlbeans-maven-plugin/index.html -->
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>xmlbeans-maven-plugin</artifactId>
+                    <version>2.3.3</version>
                     <executions>
                         <execution>
+                            <phase>generate-sources</phase>
                             <goals>
-                                <goal>compile</goal>
+                                <goal>xmlbeans</goal>
                             </goals>
                         </execution>
                     </executions>
+                    <inherited>true</inherited>
                     <configuration>
-                        <repackage>${project.parent.groupId}</repackage>
-                        <sourceDir>${project.basedir}/src/main/resources</sourceDir>
-                        <name>xmlbeans</name>
+                        <schemaDirectory>src/main/resources</schemaDirectory>
+                        <download>true</download>
+                        <!-- <classGenerationDirectory></classGenerationDirectory> -->
+                        <!--sourceGenerationDirectory>src/main/java</sourceGenerationDirectory-->
+                        <!-- <outputJar></outputJar> -->
+                        <!--xmlConfigs>
+                            <xmlConfig implementation="java.io.File">src/main/xsdconfig/config.xsdconfig</xmlConfig>
+                        </xmlConfigs-->
                     </configuration>
                 </plugin>
+
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-clean-plugin</artifactId>
