@@ -16,7 +16,8 @@ Ny klasse: Utlending/EEA (V2.4 EO_052 Sak 650)
         targetNamespace="http://www.kith.no/xmlstds/eresept/m1/2010-05-01" elementFormDefault="qualified"
         attributeFormDefault="unqualified">
     <import namespace="http://www.kith.no/xmlstds" schemaLocation="../../../../kith/src/main/resources/kith.xsd"/>
-    <import namespace="http://www.kith.no/xmlstds/felleskomponent1" schemaLocation="../../../../felleskomponent1/src/main/resources/felleskomponent1.xsd"/>
+    <import namespace="http://www.kith.no/xmlstds/felleskomponent1"
+            schemaLocation="../../../../felleskomponent1/src/main/resources/felleskomponent1.xsd"/>
     <import namespace="http://www.kith.no/xmlstds/eresept/forskrivning/2010-04-01"
             schemaLocation="../../../../forskrivning-2010-04-01/src/main/resources/Forskrivning-2010-04-01.xsd"/>
     <element name="Resept">

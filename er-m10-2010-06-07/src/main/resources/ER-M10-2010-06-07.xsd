@@ -15,8 +15,10 @@ Nytt element: Papirresept
         targetNamespace="http://www.kith.no/xmlstds/eresept/m10/2010-06-07" elementFormDefault="qualified"
         attributeFormDefault="unqualified">
     <import namespace="http://www.kith.no/xmlstds" schemaLocation="../../../../kith/src/main/resources/kith.xsd"/>
-    <import namespace="http://www.kith.no/xmlstds/felleskomponent1" schemaLocation="../../../../felleskomponent1/src/main/resources/felleskomponent1.xsd"/>
-    <import namespace="http://www.kith.no/xmlstds/eresept/m1/2010-05-01" schemaLocation="../../../../er-m1-2010-05-01/src/main/resources/ER-M1-2010-05-01.xsd"/>
+    <import namespace="http://www.kith.no/xmlstds/felleskomponent1"
+            schemaLocation="../../../../felleskomponent1/src/main/resources/felleskomponent1.xsd"/>
+    <import namespace="http://www.kith.no/xmlstds/eresept/m1/2010-05-01"
+            schemaLocation="../../../../er-m1-2010-05-01/src/main/resources/ER-M1-2010-05-01.xsd"/>
     <import namespace="http://www.kith.no/xmlstds/eresept/utlevering/2010-05-01"
             schemaLocation="../../../../er-utlevering-2010-05-01/src/main/resources/ER-Utlevering-2010-05-01.xsd"/>
     <element name="Utleveringsrapport">

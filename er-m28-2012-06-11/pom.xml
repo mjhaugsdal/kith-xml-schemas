@@ -19,33 +19,4 @@
         </dependency>
     </dependencies>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.cxf</groupId>
-                <artifactId>cxf-xjc-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <phase>generate-sources</phase>
-                        <goals>
-                            <goal>xsdtojava</goal>
-                        </goals>
-                        <configuration>
-                            <xsdOptions>
-                                <xsdOption>
-                                    <xsd>${project.basedir}/src/main/resources/ER-M28-2012-06-11.xsd</xsd>
-                                    <extensionArgs>
-                                        <extensionArg>-Ximm</extensionArg>
-                                        <extensionArg>-Ximm-builder</extensionArg>
-                                    </extensionArgs>
-                                </xsdOption>
-                            </xsdOptions>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>
-
-
 </project>

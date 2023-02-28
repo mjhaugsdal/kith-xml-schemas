@@ -24,7 +24,8 @@ Hele m254:EnkeltoppforingVIB/m254:Sporsmal er bygd om til ny struktur (EA 4495/4
         attributeFormDefault="unqualified">
     <import namespace="http://www.kith.no/xmlstds/eresept/ki/2013-04-25"
             schemaLocation="../../../../er-kritiskinformasjon-2013-04-25/src/main/resources/ER-KritiskInformasjon-2013-04-25.xsd"/>
-    <import namespace="http://www.kith.no/xmlstds/felleskomponent1" schemaLocation="../../../../felleskomponent1/src/main/resources/felleskomponent1.xsd"/>
+    <import namespace="http://www.kith.no/xmlstds/felleskomponent1"
+            schemaLocation="../../../../felleskomponent1/src/main/resources/felleskomponent1.xsd"/>
     <import namespace="http://www.kith.no/xmlstds" schemaLocation="../../../../kith/src/main/resources/kith.xsd"/>
     <element name="LegemidlerIBruk">
         <complexType>

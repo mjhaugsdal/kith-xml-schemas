@@ -10,35 +10,4 @@
     </parent>
     <artifactId>er-m261-2008-05-15</artifactId>
     <version>3.0.0-SNAPSHOT</version>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.cxf</groupId>
-                <artifactId>cxf-xjc-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <phase>generate-sources</phase>
-                        <goals>
-                            <goal>xsdtojava</goal>
-                        </goals>
-                        <configuration>
-                            <xsdOptions>
-                                <xsdOption>
-                                    <xsd>${project.basedir}/src/main/resources/ER-M261-2008-05-15.xsd</xsd>
-                                    <extensionArgs>
-                                        <extensionArg>-Ximm</extensionArg>
-                                        <extensionArg>-Ximm-builder</extensionArg>
-                                    </extensionArgs>
-                                </xsdOption>
-                            </xsdOptions>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>
-
-
-
 </project>

@@ -18,7 +18,8 @@ Kun nytt namespace.
         targetNamespace="http://www.kith.no/xmlstds/eresept/m9na4/2016-06-06" elementFormDefault="qualified"
         attributeFormDefault="unqualified">
     <import namespace="http://www.kith.no/xmlstds" schemaLocation="../../../../kith/src/main/resources/kith.xsd"/>
-    <import namespace="http://www.kith.no/xmlstds/felleskomponent1" schemaLocation="../../../../felleskomponent1/src/main/resources/felleskomponent1.xsd"/>
+    <import namespace="http://www.kith.no/xmlstds/felleskomponent1"
+            schemaLocation="../../../../felleskomponent1/src/main/resources/felleskomponent1.xsd"/>
     <element name="M9NA4">
         <annotation>
             <documentation>Utvidet informasjon om en enkelt resept.</documentation>

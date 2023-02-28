@@ -10,8 +10,6 @@
     </parent>
     <artifactId>er-m244-2013-10-15</artifactId>
     <version>3.0.0-SNAPSHOT</version>
-
-
     <dependencies>
         <dependency>
             <groupId>no.kith.xmlstds</groupId>
@@ -19,34 +17,5 @@
             <version>3.0.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.cxf</groupId>
-                <artifactId>cxf-xjc-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <phase>generate-sources</phase>
-                        <goals>
-                            <goal>xsdtojava</goal>
-                        </goals>
-                        <configuration>
-                            <xsdOptions>
-                                <xsdOption>
-                                    <xsd>${project.basedir}/src/main/resources/ER-M244-2013-10-15.xsd</xsd>
-                                    <extensionArgs>
-                                        <extensionArg>-Ximm</extensionArg>
-                                        <extensionArg>-Ximm-builder</extensionArg>
-                                    </extensionArgs>
-                                </xsdOption>
-                            </xsdOptions>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>
-
 
 </project>

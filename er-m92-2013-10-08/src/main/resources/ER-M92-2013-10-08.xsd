@@ -22,7 +22,8 @@ Endret path schemaLocation til m274
     <import namespace="http://www.kith.no/xmlstds" schemaLocation="../../../../kith/src/main/resources/kith.xsd"/>
     <import namespace="http://www.kith.no/xmlstds/eresept/m274/2012-06-11"
             schemaLocation="../../../../er-m274-2012-06-11/src/main/resources/ER-M274-2012-06-11.xsd"/>
-    <import namespace="http://www.kith.no/xmlstds/felleskomponent1" schemaLocation="../../../../felleskomponent1/src/main/resources/felleskomponent1.xsd"/>
+    <import namespace="http://www.kith.no/xmlstds/felleskomponent1"
+            schemaLocation="../../../../felleskomponent1/src/main/resources/felleskomponent1.xsd"/>
     <element name="Reseptliste">
         <annotation>
             <documentation>Returnerer en liste over aktuelle resepter fra reseptbank.</documentation>

@@ -10,7 +10,8 @@ M27.4 Svar på registrering av multidoseansvarlig gruppe
         targetNamespace="http://www.kith.no/xmlstds/eresept/m274/2012-06-11" elementFormDefault="qualified"
         attributeFormDefault="unqualified">
     <import namespace="http://www.kith.no/xmlstds" schemaLocation="../../../../kith/src/main/resources/kith.xsd"/>
-    <import namespace="http://www.kith.no/xmlstds/felleskomponent1" schemaLocation="../../../../felleskomponent1/src/main/resources/felleskomponent1.xsd"/>
+    <import namespace="http://www.kith.no/xmlstds/felleskomponent1"
+            schemaLocation="../../../../felleskomponent1/src/main/resources/felleskomponent1.xsd"/>
     <element name="M274">
         <complexType>
             <sequence>

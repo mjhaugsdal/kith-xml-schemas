@@ -14,7 +14,8 @@ Nytt element: ReservasjonRapportFastlege
         targetNamespace="http://www.kith.no/xmlstds/eresept/m81/2012-10-10" elementFormDefault="qualified"
         attributeFormDefault="unqualified">
     <import namespace="http://www.kith.no/xmlstds" schemaLocation="../../../../kith/src/main/resources/kith.xsd"/>
-    <import namespace="http://www.kith.no/xmlstds/felleskomponent1" schemaLocation="../../../../felleskomponent1/src/main/resources/felleskomponent1.xsd"/>
+    <import namespace="http://www.kith.no/xmlstds/felleskomponent1"
+            schemaLocation="../../../../felleskomponent1/src/main/resources/felleskomponent1.xsd"/>
     <import namespace="http://www.kith.no/xmlstds/eresept/utlevering/2010-05-01"
             schemaLocation="../../../../er-utlevering-2010-05-01/src/main/resources/ER-Utlevering-2010-05-01.xsd"/>
     <element name="UtleveringsrapportKjernejournal">

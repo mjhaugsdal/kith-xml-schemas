@@ -14,8 +14,9 @@
         <maven.compiler.target>${version.java}</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <immutable-plugin.version>1.7.1</immutable-plugin.version>
-        <cxf-plugin.version>3.3.2</cxf-plugin.version>
+        <version.jaxb>2.3.1</version.jaxb>
+        <version.jax2b-plugin>0.15.2</version.jax2b-plugin>
+        <version.rich-contract-plugin>2.1.0</version.rich-contract-plugin>
     </properties>
 
     <modules>
@@ -120,34 +121,17 @@
         <developerConnection>scm:git:https://github.com/mjhaugsdal/kith-xmlbeans.git</developerConnection>
     </scm>
 
-<!--    <dependencies>-->
-<!--        <dependency>-->
-<!--            <groupId>jakarta.xml.bind</groupId>-->
-<!--            <artifactId>jakarta.xml.bind-api</artifactId>-->
-<!--            <version>3.0.1</version>-->
-<!--        </dependency>-->
-<!--    </dependencies>-->
+    <dependencies>
+        <dependency>
+            <groupId>javax.xml.bind</groupId>
+            <artifactId>jaxb-api</artifactId>
+            <version>${version.jaxb}</version>
+        </dependency>
+    </dependencies>
 
     <build>
         <pluginManagement>
             <plugins>
-                <plugin>
-                    <groupId>org.apache.cxf</groupId>
-                    <artifactId>cxf-xjc-plugin</artifactId>
-                    <version>${cxf-plugin.version}</version>
-                    <configuration>
-                        <extensions>
-                            <extension>org.apache.cxf.xjcplugins:cxf-xjc-dv:${cxf-plugin.version}</extension>
-                        </extensions>
-                    </configuration>
-                    <dependencies>
-                        <dependency>
-                            <groupId>com.github.sabomichal</groupId>
-                            <artifactId>immutable-xjc-plugin</artifactId>
-                            <version>${immutable-plugin.version}</version>
-                        </dependency>
-                    </dependencies>
-                </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-clean-plugin</artifactId>
@@ -170,5 +154,63 @@
                 </plugin>
             </plugins>
         </pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>org.jvnet.jaxb2.maven2</groupId>
+                <artifactId>maven-jaxb2-plugin</artifactId>
+                <version>${version.jax2b-plugin}</version>
+                <configuration>
+                    <schemaIncludes>
+                        <schemaInclude>**/*.xsd</schemaInclude>
+                    </schemaIncludes>
+                    <strict>true</strict>
+                    <verbose>true</verbose>
+                    <extension>true</extension>
+                    <removeOldOutput>true</removeOldOutput>
+                    <plugins>
+                        <plugin>
+                            <groupId>net.codesup.util</groupId>
+                            <artifactId>jaxb2-rich-contract-plugin</artifactId>
+                            <version>${version.rich-contract-plugin}</version>
+                        </plugin>
+                    </plugins>
+                    <args>
+                        <arg>-Xfluent-builder</arg>
+                        <arg>-rootSelectorClassName=Select</arg>
+                        <arg>-newBuilderMethodName=builder</arg>
+                        <arg>-newCopyBuilderMethodName=newCopyBuilder</arg>
+                        <arg>-copyToMethodName=copyTo</arg>
+                        <arg>-builderFieldSuffix=_Builder</arg>
+                        <arg>-generateTools=y</arg>
+                        <arg>-narrow=n</arg>
+                        <arg>-copyPartial=y</arg>
+                        <arg>-selectorClassName=Selector</arg>
+                        <arg>-builderClassName=Builder</arg>
+                        <arg>-builderInterfaceName=BuildSupport</arg>
+                        <arg>-copyAlways=n</arg>
+                        <arg>-buildMethodName=build</arg>
+                        <arg>-endMethodName=end</arg>
+                        <arg>-generateJavadocFromAnnotations=n</arg>
+                        <arg>-Xgroup-contract</arg>
+                        <arg>-declareSetters=y</arg>
+                        <arg>-declareBuilderInterface=y</arg>
+                        <arg>-supportInterfaceNameSuffix=Lifecycle</arg>
+                        <arg>-upstreamEpisodeFile=META-INF/jaxb-interfaces.episode</arg>
+                        <arg>-downstreamEpisodeFile=/META-INF/jaxb-interfaces.episode</arg>
+                        <arg>-Xmodifier</arg>
+                        <arg>-modifierClassName=Modifier</arg>
+                        <arg>-modifierMethodName=modifier</arg>
+                    </args>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>generate</id>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
     </build>
 </project>

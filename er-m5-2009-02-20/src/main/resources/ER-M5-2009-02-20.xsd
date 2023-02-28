@@ -8,7 +8,8 @@ M5 Tilbakekalling av resept
         xmlns="http://www.w3.org/2001/XMLSchema"
         targetNamespace="http://www.kith.no/xmlstds/eresept/m5/2009-02-20" elementFormDefault="qualified"
         attributeFormDefault="unqualified">
-    <import namespace="http://www.kith.no/xmlstds/felleskomponent1" schemaLocation="../../../../felleskomponent1/src/main/resources/felleskomponent1.xsd"/>
+    <import namespace="http://www.kith.no/xmlstds/felleskomponent1"
+            schemaLocation="../../../../felleskomponent1/src/main/resources/felleskomponent1.xsd"/>
     <element name="Tilbakekalling">
         <annotation>
             <documentation>Sendes av lege for å "slette" en resept fra Reseptbanken.</documentation>

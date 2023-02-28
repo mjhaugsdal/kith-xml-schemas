@@ -13,7 +13,8 @@ IdPasient fjernet. Bruk pasient-klassen i hodemelding.
         xmlns="http://www.w3.org/2001/XMLSchema"
         targetNamespace="http://www.kith.no/xmlstds/eresept/m9na3/2016-06-06" elementFormDefault="qualified"
         attributeFormDefault="unqualified">
-    <import namespace="http://www.kith.no/xmlstds/felleskomponent1" schemaLocation="../../../../felleskomponent1/src/main/resources/felleskomponent1.xsd"/>
+    <import namespace="http://www.kith.no/xmlstds/felleskomponent1"
+            schemaLocation="../../../../felleskomponent1/src/main/resources/felleskomponent1.xsd"/>
     <element name="M9NA3">
         <complexType>
             <sequence>

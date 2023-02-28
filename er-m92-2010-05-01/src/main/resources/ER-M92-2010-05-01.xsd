@@ -14,7 +14,8 @@ Nytt element: Reseptinfo/MetodeEkspedering (V2.4 EO_051 Sak 705)
         targetNamespace="http://www.kith.no/xmlstds/eresept/m92/2010-05-01" elementFormDefault="qualified"
         attributeFormDefault="unqualified">
     <import namespace="http://www.kith.no/xmlstds" schemaLocation="../../../../kith/src/main/resources/kith.xsd"/>
-    <import namespace="http://www.kith.no/xmlstds/felleskomponent1" schemaLocation="../../../../felleskomponent1/src/main/resources/felleskomponent1.xsd"/>
+    <import namespace="http://www.kith.no/xmlstds/felleskomponent1"
+            schemaLocation="../../../../felleskomponent1/src/main/resources/felleskomponent1.xsd"/>
     <element name="Reseptliste">
         <annotation>
             <documentation>Returnerer en liste over aktuelle resepter fra reseptbank.</documentation>
