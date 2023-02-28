@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+eResept versjon 2.5
+M20 Notifisering
+2013-10-08
+ -->
+<!--
+Endringer siden v2.5 2013-04-16
+Nytt namespace Utlevering
+-->
+<schema
+        xmlns:kith="http://www.kith.no/xmlstds" xmlns:ul="http://www.kith.no/xmlstds/eresept/utlevering/2013-10-08"
+        xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.kith.no/xmlstds/eresept/m20/2013-10-08" elementFormDefault="qualified"
+        attributeFormDefault="unqualified">
+    <import namespace="http://www.kith.no/xmlstds" schemaLocation="../../../../kith/src/main/resources/kith.xsd"/>
+    <import namespace="http://www.kith.no/xmlstds/eresept/utlevering/2013-10-08"
+            schemaLocation="../../../../er-utlevering-2013-10-08/src/main/resources/ER-Utlevering-2013-10-08.xsd"/>
+    <element name="Notifisering">
+        <annotation>
+            <documentation>M20</documentation>
+        </annotation>
+        <complexType>
+            <sequence>
+                <element ref="ul:Utlevering"/>
+                <element name="PrisLegemiddelUtenMt" type="kith:MO" minOccurs="0"/>
+            </sequence>
+        </complexType>
+    </element>
+</schema>

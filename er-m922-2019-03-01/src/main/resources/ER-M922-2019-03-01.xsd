@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+eResept versjon 2.5 oppdatering
+M9.22 Endrede multidosepasienter
+2019-03-01
+Endret struktur for å kunne formidle gammel og ny identitet på pasient som har byttet fnr/dnr
+M9.21 og M9.22 skal fra 1.1.2019 kunne benyttes også av rekvirent som har multidosepasienter
+ -->
+<!--
+eResept versjon 2.5
+M9.22 Endrede multidosepasienter
+2013-10-14
+ -->
+<!--
+Forslag til ny melding: fremmes for løsningsgruppe e-resept 
+-->
+<schema
+        xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.ehelse.no/xmlstds/eresept/m922/2019-03-01" elementFormDefault="qualified"
+        attributeFormDefault="unqualified">
+    <element name="M922">
+        <complexType>
+            <annotation>
+                <documentation>Meldingen skal inneholde enten en liste av "Pasient", eller flagget "IngenEndring" med
+                    verdien "true"
+                </documentation>
+            </annotation>
+            <choice>
+                <element name="Pasient" maxOccurs="unbounded">
+                    <complexType>
+                        <annotation>
+                            <documentation>"Fnr" kan være enten fødselsnummer eller D-nummer. Det samme kan "AndreFnr"
+                            </documentation>
+                        </annotation>
+                        <sequence>
+                            <element name="Fnr" type="string"/>
+                            <element name="AndreFnr" type="string" minOccurs="0" maxOccurs="unbounded"/>
+                        </sequence>
+                    </complexType>
+                </element>
+                <element name="IngenEndring" type="boolean"/>
+            </choice>
+        </complexType>
+    </element>
+</schema>

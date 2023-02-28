@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+eResept versjon 2.4
+M6 Utleveringsrapport rekvirent
+2010-05-01
+ -->
+<!--
+Endringer siden v2.3 2009-02-20
+Namespace Utlevering, M1
+-->
+<schema
+        xmlns:ul="http://www.kith.no/xmlstds/eresept/utlevering/2010-05-01"
+        xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.kith.no/xmlstds/eresept/m6/2010-05-01" elementFormDefault="qualified"
+        attributeFormDefault="unqualified">
+    <import namespace="http://www.kith.no/xmlstds" schemaLocation="../../../../kith/src/main/resources/kith.xsd"/>
+    <import namespace="http://www.kith.no/xmlstds/felleskomponent1" schemaLocation="../../../../felleskomponent1/src/main/resources/felleskomponent1.xsd"/>
+    <import namespace="http://www.kith.no/xmlstds/eresept/utlevering/2010-05-01"
+            schemaLocation="../../../../er-utlevering-2010-05-01/src/main/resources/ER-Utlevering-2010-05-01.xsd"/>
+    <element name="UtleveringsrapportRekvirent">
+        <annotation>
+            <documentation>M6</documentation>
+        </annotation>
+        <complexType>
+            <sequence>
+                <element ref="ul:Utlevering"/>
+                <element name="ReferanseM10" type="string"/>
+            </sequence>
+        </complexType>
+    </element>
+</schema>

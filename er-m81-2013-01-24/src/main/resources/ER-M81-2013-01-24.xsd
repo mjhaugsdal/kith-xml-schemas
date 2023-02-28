@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+eResept versjon 2.4
+M8.1 Utleveringsrapport kjernejournal
+2012-01-24
+-->
+<!--
+Endringer siden 2012-10-10
+Nytt element: ReservasjonRapportFastlege
+ -->
+<schema
+        xmlns:ul="http://www.kith.no/xmlstds/eresept/utlevering/2010-05-01"
+        xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.kith.no/xmlstds/eresept/m81/2012-10-10" elementFormDefault="qualified"
+        attributeFormDefault="unqualified">
+    <import namespace="http://www.kith.no/xmlstds" schemaLocation="../../../../kith/src/main/resources/kith.xsd"/>
+    <import namespace="http://www.kith.no/xmlstds/felleskomponent1" schemaLocation="../../../../felleskomponent1/src/main/resources/felleskomponent1.xsd"/>
+    <import namespace="http://www.kith.no/xmlstds/eresept/utlevering/2010-05-01"
+            schemaLocation="../../../../er-utlevering-2010-05-01/src/main/resources/ER-Utlevering-2010-05-01.xsd"/>
+    <element name="UtleveringsrapportKjernejournal">
+        <annotation>
+            <documentation>M8.1</documentation>
+        </annotation>
+        <complexType>
+            <sequence>
+                <element ref="ul:Utlevering"/>
+                <element name="ReferanseM10" type="string"/>
+                <element name="Papirresept" type="boolean" minOccurs="0"/>
+                <element name="RefNr" type="string" minOccurs="0"/>
+                <element name="ReservasjonRapportFastlege" type="boolean" minOccurs="0"/>
+                <element name="Vergeinnsynsreservasjon" type="boolean" minOccurs="0"/>
+            </sequence>
+        </complexType>
+    </element>
+</schema>

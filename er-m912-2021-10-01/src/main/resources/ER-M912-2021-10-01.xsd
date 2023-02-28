@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2021 (x64) (http://www.altova.com) by Norsk Helsenett SF (Norsk Helsenett SF (FACTOR)) -->
+<!-- 
+Endret versjon. I godkjenningsløpet!
+ -->
+<!-- 
+eResept versjon 2.5
+M9.12 Nedlasting av legemidler i bruk
+2021-10-01
+ -->
+<!--
+Endringer siden v2.5 2018-07-01
+Multidoseansvar bygget om. HER-id manglet for apotek, og objektene er flyttet lokalt til dette namespace i stedet for m274 som er utgått.
+Multidoseansvarlig lege er nå fornavn/etternavn for å samsvare med m25 meldingene
+Identer og telefon er nå string for enkelthets skyld (tidligere komplekse felleskomponent1 strukturer)
+-->
+<!--
+Endringer siden v2.5 2014-01-21
+Nytt element:  AndreFnr (ERSA-sak 13463)
+Endret navn: Multidosepasient -> Pasient
+-->
+<!-- 
+Endringer siden v2.5 2013-10-08
+Endret kardinalitet m912:M912/m912:Multidosepasient 0..* -> 1..1 (ERSA-sak 5527) (feltet heter nå Pasient)
+Nytt element: m912:M912/m912:Multidosepasient/m912:RefMsgId (ERSA-sak 5526)
+Fjernet element: m912:M912/m912:Multidosepasient/m912:LasteResepter (ERSA-sak 5487)
+-->
+<schema xmlns:m912="http://www.ehelse.no/xmlstds/eresept/m912/2021-10-01"
+        xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.ehelse.no/xmlstds/eresept/m912/2021-10-01" elementFormDefault="qualified"
+        attributeFormDefault="unqualified">
+    <import namespace="http://www.kith.no/xmlstds" schemaLocation="../../../../kith/src/main/resources/kith.xsd"/>
+    <element name="M912">
+        <annotation>
+            <documentation>Nedlasting av varer i bruk</documentation>
+        </annotation>
+        <complexType>
+            <sequence>
+                <element name="Pasient">
+                    <complexType>
+                        <sequence>
+                            <element name="Fnr" type="string"/>
+                            <element name="AndreFnr" type="string" minOccurs="0" maxOccurs="unbounded"/>
+                            <element name="RefMsgId" type="string" minOccurs="0"/>
+                            <element ref="m912:Multidoselege" minOccurs="0"/>
+                            <element ref="m912:Multidoseapotek" minOccurs="0"/>
+                            <element name="VarerIBrukB64" type="base64Binary" minOccurs="0" maxOccurs="3"/>
+                        </sequence>
+                    </complexType>
+                </element>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="Multidoselege">
+        <annotation>
+            <documentation></documentation>
+        </annotation>
+        <complexType>
+            <sequence>
+                <element name="HprNr" type="string">
+                    <annotation>
+                        <documentation>Legens helsepersonell-nummer</documentation>
+                    </annotation>
+                </element>
+                <element name="Fornavn" type="string">
+                    <annotation>
+                        <documentation>Legens fornavn</documentation>
+                    </annotation>
+                </element>
+                <element name="Etternavn" type="string">
+                    <annotation>
+                        <documentation>Legens navn</documentation>
+                    </annotation>
+                </element>
+                <element name="OrgNavn" type="string">
+                    <annotation>
+                        <documentation>Navnet på multidoseansvarlig leges organisasjon</documentation>
+                    </annotation>
+                </element>
+                <element name="HerId" type="string">
+                    <annotation>
+                        <documentation>HER-id (adresseregisteret) til multidoseansvarlig leges organisasjon
+                        </documentation>
+                    </annotation>
+                </element>
+                <element name="AktivTil" type="date" minOccurs="0">
+                    <annotation>
+                        <documentation>Dato for når lege ikke lenger har multidoseansvar for pasient</documentation>
+                    </annotation>
+                </element>
+                <element name="Telefon" type="string" minOccurs="0">
+                    <annotation>
+                        <documentation>Telefonnummer hvor multidoseansvarlig lege kan nåes på dagtid, eksempelvis
+                            legekontorets telefonnummer
+                        </documentation>
+                    </annotation>
+                </element>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="Multidoseapotek">
+        <complexType>
+            <sequence>
+                <element name="Navn" type="string">
+                    <annotation>
+                        <documentation>Apotekets navn</documentation>
+                    </annotation>
+                </element>
+                <element name="Herid" type="string">
+                    <annotation>
+                        <documentation>Apotekets HerID registrert i Reseptformidleren</documentation>
+                    </annotation>
+                </element>
+                <element name="Konsesjonsnummer" type="string" minOccurs="0">
+                    <annotation>
+                        <documentation>Apotekets konsesjonsnummer</documentation>
+                    </annotation>
+                </element>
+                <element name="AktivTil" type="date" minOccurs="0">
+                    <annotation>
+                        <documentation>Dato for når apotek ikke lenger har multidoseansvar for pasient</documentation>
+                    </annotation>
+                </element>
+                <element name="Telefon" type="string" minOccurs="0">
+                    <annotation>
+                        <documentation>Apotekets telefonnummer.</documentation>
+                    </annotation>
+                </element>
+            </sequence>
+        </complexType>
+    </element>
+</schema>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2021 (x64) (http://www.altova.com) by Norsk Helsenett SF (Norsk Helsenett SF (FACTOR)) -->
+<!-- 
+eResept versjon 2.5
+M9.11 Forespørsel om legemidler i bruk
+2021-10-01
+ -->
+<!--
+Endringer siden v2.5 2018-07-01
+Lagt til InklM25Meldinger for valgfri inkludering av m25 meldinger i svaret
+-->
+<!--
+Endringer siden v2.5 2014-01-21
+Samtykke fjernet ihht forskriftsendring (ERSA-sak 14456 og 14458)
+Komprimering lagt til: ønske til reseptformidler om å komprimere M9.12 svar.
+-->
+<!--
+Endringer siden v2.5 2013-10-08
+Endret kardinalitet m911:M911/m911:Fnr 1..* -> 1..1 (ERSA-sak 5527>
+-->
+<schema
+        xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.ehelse.no/xmlstds/eresept/m911/2021-10-01" elementFormDefault="qualified"
+        attributeFormDefault="unqualified">
+    <import namespace="http://www.kith.no/xmlstds" schemaLocation="../../../../kith/src/main/resources/kith.xsd"/>
+    <element name="M911">
+        <complexType>
+            <sequence>
+                <element name="Fnr" type="string">
+                    <annotation>
+                        <documentation>Fødselsnummer på pasienten det søkes etter Varer i bruk for.</documentation>
+                    </annotation>
+                </element>
+                <element name="InklReseptinfo" type="boolean" minOccurs="0">
+                    <annotation>
+                        <documentation>Angivelse av om svaret skal inneholde informasjon om alle tilgjengelige resepter
+                            for pasient.
+                        </documentation>
+                    </annotation>
+                </element>
+                <element name="InklM25Meldinger" type="boolean" minOccurs="0">
+                    <annotation>
+                        <documentation>Angivelse av om svaret skal inneholde siste versjon av M25.1, M25.2 og M25.3
+                            dersom de finnes i Reseptformidleren
+                        </documentation>
+                    </annotation>
+                </element>
+                <element name="AnstattId" type="string" minOccurs="0"/>
+                <element name="Komprimering" type="int">
+                    <annotation>
+                        <documentation>Integer pga kompatibilitet med annen bruk, men fungerer som boolean. "0 (eller
+                            mindre)": svaret blir ikke komprimert. "1 (eller større)": svaret blir komprimert.
+                        </documentation>
+                    </annotation>
+                </element>
+            </sequence>
+        </complexType>
+    </element>
+</schema>
