@@ -6,19 +6,35 @@
     <parent>
         <groupId>no.kith.xmlstds</groupId>
         <artifactId>reactor</artifactId>
-        <version>2.0.0-SNAPSHOT</version>
+        <version>3.0.0-SNAPSHOT</version>
     </parent>
     <artifactId>er-mv-2017-01-01</artifactId>
-    <version>2.0.0-SNAPSHOT</version>
+    <version>3.0.0-SNAPSHOT</version>
 
     <build>
         <plugins>
             <plugin>
-                <groupId>org.apache.xmlbeans</groupId>
-                <artifactId>xmlbeans</artifactId>
-                <configuration>
-                    <name>mv.x20170101</name>
-                </configuration>
+                <groupId>org.apache.cxf</groupId>
+                <artifactId>cxf-xjc-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>xsdtojava</goal>
+                        </goals>
+                        <configuration>
+                            <xsdOptions>
+                                <xsdOption>
+                                    <xsd>${project.basedir}/src/main/resources/ER-MV-2017-01-01.xsd</xsd>
+                                    <extensionArgs>
+                                        <extensionArg>-Ximm</extensionArg>
+                                        <extensionArg>-Ximm-builder</extensionArg>
+                                    </extensionArgs>
+                                </xsdOption>
+                            </xsdOptions>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>

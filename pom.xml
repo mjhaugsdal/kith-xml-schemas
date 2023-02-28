@@ -5,7 +5,7 @@
 
     <groupId>no.kith.xmlstds</groupId>
     <artifactId>reactor</artifactId>
-    <version>2.0.0-SNAPSHOT</version>
+    <version>3.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <properties>
@@ -14,8 +14,8 @@
         <maven.compiler.target>${version.java}</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <version.xmlbeans>5.1.1</version.xmlbeans>
-        <version.log4j-core>2.20.0</version.log4j-core>
+        <immutable-plugin.version>1.7.1</immutable-plugin.version>
+        <cxf-plugin.version>3.3.2</cxf-plugin.version>
     </properties>
 
     <modules>
@@ -120,33 +120,33 @@
         <developerConnection>scm:git:https://github.com/mjhaugsdal/kith-xmlbeans.git</developerConnection>
     </scm>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.apache.xmlbeans</groupId>
-            <artifactId>xmlbeans</artifactId>
-            <version>${version.xmlbeans}</version>
-        </dependency>
-    </dependencies>
+<!--    <dependencies>-->
+<!--        <dependency>-->
+<!--            <groupId>jakarta.xml.bind</groupId>-->
+<!--            <artifactId>jakarta.xml.bind-api</artifactId>-->
+<!--            <version>3.0.1</version>-->
+<!--        </dependency>-->
+<!--    </dependencies>-->
 
     <build>
         <pluginManagement>
             <plugins>
                 <plugin>
-                    <groupId>org.apache.xmlbeans</groupId>
-                    <artifactId>xmlbeans</artifactId>
-                    <version>${version.xmlbeans}</version>
-                    <executions>
-                        <execution>
-                            <goals>
-                                <goal>compile</goal>
-                            </goals>
-                        </execution>
-                    </executions>
+                    <groupId>org.apache.cxf</groupId>
+                    <artifactId>cxf-xjc-plugin</artifactId>
+                    <version>${cxf-plugin.version}</version>
                     <configuration>
-                        <repackage>${project.parent.groupId}</repackage>
-                        <sourceDir>${project.basedir}/src/main/resources</sourceDir>
-                        <name>xmlbeans</name>
+                        <extensions>
+                            <extension>org.apache.cxf.xjcplugins:cxf-xjc-dv:${cxf-plugin.version}</extension>
+                        </extensions>
                     </configuration>
+                    <dependencies>
+                        <dependency>
+                            <groupId>com.github.sabomichal</groupId>
+                            <artifactId>immutable-xjc-plugin</artifactId>
+                            <version>${immutable-plugin.version}</version>
+                        </dependency>
+                    </dependencies>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
