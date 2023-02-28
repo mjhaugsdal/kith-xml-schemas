@@ -26,10 +26,11 @@
                             <xsdOptions>
                                 <xsdOption>
                                     <xsd>${project.basedir}/src/main/resources/kith.xsd</xsd>
-<!--                                    <extensionArgs>-->
-<!--                                        <extensionArg>-Ximm</extensionArg>-->
-<!--                                        <extensionArg>-Ximm-builder</extensionArg>-->
-<!--                                    </extensionArgs>-->
+                                    <extensionArgs>
+                                        <extensionArg>-Ximm</extensionArg>
+                                        <extensionArg>-Ximm-builder</extensionArg>
+                                        <extensionArg>-Ximm-skipcollections</extensionArg>
+                                    </extensionArgs>
                                 </xsdOption>
                             </xsdOptions>
                         </configuration>

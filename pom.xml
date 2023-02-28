@@ -14,8 +14,8 @@
         <maven.compiler.target>${version.java}</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <immutable-plugin.version>1.7.1</immutable-plugin.version>
-        <cxf-plugin.version>3.3.2</cxf-plugin.version>
+        <immutable-plugin.version>2.0.0</immutable-plugin.version>
+        <cxf-plugin.version>4.0.0</cxf-plugin.version>
     </properties>
 
     <modules>
@@ -120,13 +120,15 @@
         <developerConnection>scm:git:https://github.com/mjhaugsdal/kith-xmlbeans.git</developerConnection>
     </scm>
 
-<!--    <dependencies>-->
-<!--        <dependency>-->
-<!--            <groupId>jakarta.xml.bind</groupId>-->
-<!--            <artifactId>jakarta.xml.bind-api</artifactId>-->
-<!--            <version>3.0.1</version>-->
-<!--        </dependency>-->
-<!--    </dependencies>-->
+    <dependencies>
+        <dependency>
+            <groupId>jakarta.xml.bind</groupId>
+            <artifactId>jakarta.xml.bind-api</artifactId>
+            <version>4.0.0</version>
+        </dependency>
+    </dependencies>
+
+
 
     <build>
         <pluginManagement>
