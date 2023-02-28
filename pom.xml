@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>no.kith.xmlstds</groupId>
+    <groupId>io.github.mjhaugsdal</groupId>
     <artifactId>reactor</artifactId>
     <version>2.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
@@ -114,11 +114,41 @@
         <module>./msghead-2006-05-24</module>
     </modules>
 
+    <name>kith-xml-schemas</name>
+    <description>e-resept meldingsstandarder for java</description>
+    <url>https://github.com/mjhaugsdal/kith-xml-schemas.git</url>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>ossrh</id>
+            <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
+
     <scm>
-        <connection>scm:git:https://github.com/mjhaugsdal/kith-xmlbeans.git</connection>
-        <url>https://github.com/mjhaugsdal/kith-xmlbeans.git</url>
-        <developerConnection>scm:git:https://github.com/mjhaugsdal/kith-xmlbeans.git</developerConnection>
+        <connection>scm:git:https://github.com/mjhaugsdal/kith-xml-schemas.git</connection>
+        <url>https://github.com/mjhaugsdal/kith-xml-schemas.git</url>
+        <developerConnection>scm:git:https://github.com/mjhaugsdal/kith-xml-schemas.git</developerConnection>
     </scm>
+
+    <licenses>
+        <license>
+            <name>The Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+    <developers>
+        <developer>
+            <name>Markus Haugsdal</name>
+            <email>mjhaugsdal@hotmail.com</email>
+            <organization>Sonat</organization>
+            <organizationUrl>https://sonat.no</organizationUrl>
+        </developer>
+    </developers>
 
     <dependencies>
         <dependency>
@@ -170,5 +200,62 @@
                 </plugin>
             </plugins>
         </pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>2.2.1</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar-no-fork</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.9.1</version>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+                <version>3.0.1</version>
+                <configuration>
+                    <keyname>${gpg.keyname}</keyname>
+                    <passphraseServerId>gpg.passphrase</passphraseServerId>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>sign-artifacts</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>sign</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.sonatype.plugins</groupId>
+                <artifactId>nexus-staging-maven-plugin</artifactId>
+                <version>1.6.13</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <serverId>ossrh</serverId>
+                    <nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
+                    <autoReleaseAfterClose>true</autoReleaseAfterClose>
+                </configuration>
+            </plugin>
+        </plugins>
     </build>
 </project>
