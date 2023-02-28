@@ -3,28 +3,28 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>no.kith.xmlstds.xmlbeans</groupId>
+        <groupId>no.kith.xmlstds</groupId>
         <artifactId>reactor</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
 
-    <groupId>no.kith.xmlstds.xmlbeans</groupId>
+    <groupId>no.kith.xmlstds</groupId>
     <artifactId>er-m253-2013-10-08</artifactId>
     <version>1.0.0-SNAPSHOT</version>
 
     <dependencies>
         <dependency>
-            <groupId>no.kith.xmlstds.xmlbeans</groupId>
+            <groupId>no.kith.xmlstds</groupId>
             <artifactId>er-kritiskinformasjon-2013-04-25</artifactId>
             <version>1.0.0-SNAPSHOT</version>
         </dependency>
         <dependency>
-            <groupId>no.kith.xmlstds.xmlbeans</groupId>
+            <groupId>no.kith.xmlstds</groupId>
             <artifactId>felleskomponent1</artifactId>
             <version>1.0.0-SNAPSHOT</version>
         </dependency>
         <dependency>
-            <groupId>no.kith.xmlstds.xmlbeans</groupId>
+            <groupId>no.kith.xmlstds</groupId>
             <artifactId>kith</artifactId>
             <version>1.0.0-SNAPSHOT</version>
         </dependency>
