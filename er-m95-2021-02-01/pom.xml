@@ -8,7 +8,7 @@
         <version>1.0.0-SNAPSHOT</version>
     </parent>
 
-    <groupId>no.kith.xmlstds</groupId>
+    <groupId>io.github.mjhaugsdal</groupId>
     <artifactId>er-m95-2021-02-01</artifactId>
     <version>1.0.0-SNAPSHOT</version>
 
