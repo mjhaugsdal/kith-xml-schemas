@@ -19,7 +19,6 @@
     </properties>
 
     <modules>
-        <module>./parent</module>
         <module>./bom</module>
         <module>./apprec-2004-11-21</module>
         <module>./apprec-2012-02-15</module>
