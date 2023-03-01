@@ -5,7 +5,7 @@
 
     <parent>
         <groupId>io.github.mjhaugsdal</groupId>
-        <artifactId>reactor</artifactId>
+        <artifactId>eresept-xml-schemas</artifactId>
         <version>4.0.0-SNAPSHOT</version>
     </parent>
     <artifactId>er-m14-2008-12-12</artifactId>
