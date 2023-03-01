@@ -1,4 +1,4 @@
-REWRITE_SYSTEM "file:/kith.xsd" "maven:no.kith.xmlstds.xmlbeans:kith!/kith.xsd"
-REWRITE_SYSTEM "file:/felleskomponent1.xsd" "maven:no.kith.xmlstds.xmlbeans:felleskomponent1!/felleskomponent1.xsd"
-REWRITE_SYSTEM "file:/Forskrivning-2013-10-08.xsd" "maven:no.kith.xmlstds.xmlbeans:forskrivning-2013-10-08!/Forskrivning-2013-10-08.xsd"
-REWRITE_SYSTEM "file:/ER-M1-2013-10-08.xsd" "maven:no.kith.xmlstds.xmlbeans:er-m1-2013-10-08!/ER-M1-2013-10-08.xsd"
+REWRITE_SYSTEM "file:/kith.xsd" "maven:io.github.mjhaugsdal:kith!/kith.xsd"
+REWRITE_SYSTEM "file:/felleskomponent1.xsd" "maven:io.github.mjhaugsdal:felleskomponent1!/felleskomponent1.xsd"
+REWRITE_SYSTEM "file:/Forskrivning-2013-10-08.xsd" "maven:io.github.mjhaugsdal:forskrivning-2013-10-08!/Forskrivning-2013-10-08.xsd"
+REWRITE_SYSTEM "file:/ER-M1-2013-10-08.xsd" "maven:io.github.mjhaugsdal:er-m1-2013-10-08!/ER-M1-2013-10-08.xsd"

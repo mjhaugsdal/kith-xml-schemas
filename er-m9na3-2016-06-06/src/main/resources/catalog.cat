@@ -1,2 +1,2 @@
-REWRITE_SYSTEM "file:/kith.xsd" "maven:no.kith.xmlstds.xmlbeans:kith!/kith.xsd"
-REWRITE_SYSTEM "file:/felleskomponent1.xsd" "maven:no.kith.xmlstds.xmlbeans:felleskomponent1!/felleskomponent1.xsd"
+REWRITE_SYSTEM "file:/kith.xsd" "maven:io.github.mjhaugsdal:kith!/kith.xsd"
+REWRITE_SYSTEM "file:/felleskomponent1.xsd" "maven:io.github.mjhaugsdal:felleskomponent1!/felleskomponent1.xsd"
