@@ -26,6 +26,8 @@
         <module>./er-kritiskinformasjon-2013-04-25</module>
         <module>./er-m1-2010-05-01</module>
         <module>./er-m1-2013-10-08</module>
+        <module>./er-m2-2014-12-01</module>
+        <module>./er-m2-2017-12-01</module>
         <module>./er-m3-2010-05-01</module>
         <module>./er-m5-2009-02-20</module>
         <module>./er-m5-2013-04-16</module>
@@ -40,12 +42,17 @@
         <module>./er-m9na4-2016-06-06</module>
         <module>./er-m10-2010-06-07</module>
         <module>./er-m10-2013-10-08</module>
+        <module>./er-m12-2014-12-01</module>
+        <module>./er-m12-2017-12-01</module>
         <module>./er-m14-2008-12-12</module>
         <module>./er-m15-2006-10-06</module>
+        <module>./er-m18-2013-04-16</module>
         <module>./er-m20-2010-05-01</module>
         <module>./er-m20-2013-10-08</module>
         <module>./er-m21-2010-05-01</module>
         <module>./er-m21-2013-10-08</module>
+        <module>./er-m22-2006-10-06</module>
+        <module>./er-m23-2006-10-06</module>
         <module>./er-m241-2009-02-20</module>
         <module>./er-m242-2008-10-03</module>
         <module>./er-m243-2013-10-15</module>
@@ -63,6 +70,7 @@
         <module>./er-m273-2012-06-11</module>
         <module>./er-m274-2012-06-11</module>
         <module>./er-m28-2012-06-11</module>
+        <module>./er-m30-2013-10-08</module>
         <module>./er-m41-2006-10-06</module>
         <module>./er-m42-2006-10-06</module>
         <module>./er-m52-2013-12-01</module>
@@ -106,9 +114,12 @@
         <module>./felleskomponent1.1</module>
         <module>./forskrivning-2010-04-01</module>
         <module>./forskrivning-2013-10-08</module>
+        <module>./forskrivning-2014-12-01</module>
         <module>./tilgangsbegrensning-v1.0</module>
+        <module>./tilgangsbegrensning-v1.1</module>
         <module>./pasientrelasjon-2014-03-28</module>
         <module>./personvern-felles-v1.0</module>
+        <module>./er-sko-2008-05-05</module>
         <module>./kith</module>
         <module>./kith-base64</module>
         <module>./msghead-2006-05-24</module>
