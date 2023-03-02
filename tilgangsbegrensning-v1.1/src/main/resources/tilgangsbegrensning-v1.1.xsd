@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema.xsd"
+  xmlns:kith="http://www.kith.no/xmlstds" xmlns:fk1="http://www.kith.no/xmlstds/felleskomponent1"
+  xmlns:pvi="http://ehelse.no/xmlstds/PersonvernInnstilling/v1.1"
+  xmlns:tb="http://ehelse.no/xmlstds/tilgangsbegrensning/v1.1"
+  targetNamespace="http://ehelse.no/xmlstds/tilgangsbegrensning/v1.1" elementFormDefault="qualified"
+  attributeFormDefault="unqualified">
+  <import namespace="http://ehelse.no/xmlstds/PersonvernInnstilling/v1.1"
+    schemaLocation="../../../../personvern-felles-v1.1/src/main/resources/personvern-felles-v1.1.xsd"/>
+  <import namespace="http://www.kith.no/xmlstds" schemaLocation="kith.xsd"/>
+  <import namespace="http://www.kith.no/xmlstds/felleskomponent1"
+    schemaLocation="../../../../felleskomponent1.1/src/main/resources/felleskomponent1.1.xsd"/>
+  <!-- Class: Tilgangsbegrensning melding -->
+  <element name="InnbyggersTilgangsbegrensning" type="pvi:InnbyggersPersonvernInnstilling">
+    <annotation>
+      <documentation>
+         Brukes for å informere helseaktøren om at innbygger har registrert en tilgangsbegrensning.
+       </documentation>
+    </annotation>
+  </element>
+  <element name="TilgangsbegrensningMetadata" type="tb:TilgangsbegrensningMetadata" block=""/>
+  <complexType name="TilgangsbegrensningMetadata">
+    <annotation>
+      <documentation>Tilgangsbegrensning Metadata er modeelert med en liste av metadadata. Dette fordi datamodellen i PVK har åpnet for at man kan sette tilgangsbegrensinger langs flere "akser". F.eks. både for visse type kategorier opplysninger og SAMTIDIG kun for angitte Helspersonell. Så langt er det ikke definert UseCases for dette, og intil videre vil listen kun inneholde et "listeElement".</documentation>
+    </annotation>
+    <sequence>
+      <element name="TilgangsbegrensningFasteMetadata" type="tb:TilgangsbegrensningFasteMetadata"/>
+      <element minOccurs="0" name="TilgangsbegrensningInnbyggerMetadata"
+        type="tb:TilgangsbegrensningInnbyggerMetadata"/>
+    </sequence>
+  </complexType>
+  <complexType name="TilgangsbegrensningFasteMetadata">
+    <sequence>
+      <element minOccurs="0" name="FastTidsbegrensning">
+        <annotation>
+          <documentation>Det kan være en fast tidsbegrensning på en definisjons gyldighet.</documentation>
+        </annotation>
+        <complexType>
+          <sequence>
+            <element minOccurs="0" name="TidsbergrensetFra" type="date">
+              <annotation>
+                <documentation>En personverninnstillingdeifisjon kan ha et fast tidsintervall den er gyldig. Det er lov å bare angi Fra-tidspunkt eller kun slutt-tidsunkt.</documentation>
+              </annotation>
+            </element>
+            <element minOccurs="0" name="TidsbegrensetTil" type="date">
+              <annotation>
+                <documentation>En personverninnstillingdeifisjon kan ha et fast tidsintervall den er gyldig. Det er lov å bare angi Fra-tidspunkt eller kun slutt-tidsunkt.</documentation>
+              </annotation>
+            </element>
+          </sequence>
+        </complexType>
+      </element>
+      <element maxOccurs="unbounded" name="TilgangsbegrensningOmfangElement"
+        type="tb:TilgangsbegrensningOmfangElement"/>
+      <element minOccurs="0" name="FastDetaljertAngivelse" maxOccurs="1">
+        <annotation>
+          <documentation>Her angis KUN elementer som gjelder fast for definisjonen, og ikke angivelser som innbygger kan velge selv. Derfor er angivelse av "NavngittHelseperson" og "BerorteHelseforetak" ikke mulig å angi her, da disse alltid angis av innbygger selv.</documentation>
+        </annotation>
+        <complexType>
+          <sequence minOccurs="1">
+            <element maxOccurs="unbounded" name="KategoriOpplysninger" type="string" minOccurs="0">
+              <annotation>
+                <documentation>Foreløpig er det ikke etablert et kodeverk for kategori opplysninger.</documentation>
+              </annotation>
+            </element>
+            <element maxOccurs="unbounded" minOccurs="0" name="RolleTilPasient" type="kith:CV">
+              <annotation>
+                <documentation>Benytter VOLVEN kodeverk 9034</documentation>
+              </annotation>
+            </element>
+          </sequence>
+        </complexType>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="TilgangsbegrensningInnbyggerMetadata">
+    <sequence>
+      <element minOccurs="0" name="InnbyggerTidsbegrensninger">
+        <annotation>
+          <documentation>Innbygger kan (dersom det er tillatt på definisjonen) angi en- eller flere tidsperioder der definisjonen, med tilhørende metadata, skal være virksom. Dersom ikke angitt gjelder definisjonen "alltid". Det er lov å ikke angi FraDato eller la være å angi TilDato</documentation>
+        </annotation>
+        <complexType>
+          <sequence>
+            <element maxOccurs="unbounded" name="Periode">
+              <complexType>
+                <sequence>
+                  <element minOccurs="0" name="FraTidspunkt" type="date">
+                    <annotation>
+                      <documentation>Fra og med. Kan utelates, Gjelder da fra "tidenes morgen".</documentation>
+                    </annotation>
+                  </element>
+                  <element minOccurs="0" name="TilTidspunkt" type="date">
+                    <annotation>
+                      <documentation>Til og med. Kan utelates, gjelder da "intil videre".</documentation>
+                    </annotation>
+                  </element>
+                </sequence>
+              </complexType>
+            </element>
+          </sequence>
+        </complexType>
+      </element>
+      <element minOccurs="0" name="InnbyggerDetaljertAngivelse">
+        <annotation>
+          <documentation>Skal være med dersom Logisk omfang er "Angitte" eller "Ovrige" (på DefinisjonMetadata) og slike data ikke er faste for definisjonen. Her angis elementer som innbygger selv kan sette/velge (og som ikke er faste for definisjonen). Hvilke type angivelse som benyttes her er gitt av "TypeAngivelse" på Definisjons metadata.</documentation>
+        </annotation>
+        <complexType>
+          <sequence minOccurs="1">
+            <element maxOccurs="unbounded" name="KategoriOpplysninger" type="string" minOccurs="0">
+              <annotation>
+                <documentation>Foreløpig er det ikke etablert kodeverk for kategori opplysninger.</documentation>
+              </annotation>
+            </element>
+            <element maxOccurs="unbounded" minOccurs="0" name="RolleTilPasient" type="kith:CV">
+              <annotation>
+                <documentation>Benytter VOLVEN kodeverk 9034</documentation>
+              </annotation>
+            </element>
+            <element maxOccurs="unbounded" minOccurs="0" name="NavngittHelseperson"
+              type="fk1:HealthcareProfessional"/>
+            <element maxOccurs="unbounded" minOccurs="0" name="Helseforetak" type="fk1:Organisation"
+            />
+          </sequence>
+        </complexType>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="TilgangsbegrensningOmfangElement">
+    <annotation>
+      <documentation>Representerer informasjon om en av "aksene" tilgangabegrensningen er gitt for. "Aksen" er angitt gjennom elementet "TypeAngivelse". Inneholder både faste metadata (parametere) for hele definisjonen samt et element med metadata som er unike for den enkelte innbygger (hvis relevant).</documentation>
+    </annotation>
+    <sequence>
+      <element name="Omfang" type="kith:CV" minOccurs="1" maxOccurs="1">
+        <annotation>
+          <documentation>Volven kodeverk 7608, her benyttes SP = Sperre eller BL= Blokkere </documentation>
+        </annotation>
+      </element>
+      <element form="qualified" minOccurs="1" name="LogiskOmfang" type="tb:EnumLogiskOmfang">
+        <annotation>
+          <documentation>Kan ha en av følgende tre verdier: 
+- Angitte = Gjelder for det som er angitt på definisjonen eller det som er angitt av innbygger selv 
+- Ovrige = Gjelder for alt unntatt det som er angitt på definisjonen eller det som er angitt av innbygger selv
+- Alle = Gjelder for alle elementer av angitt type.</documentation>
+        </annotation>
+      </element>
+      <element name="TypeAngivelse" type="tb:EnumTypeAngivelse">
+        <annotation>
+          <documentation>Angir hvilken type angivelse som benyttes for å beskrive hva/hvem tilgangsbegrensningen gjelder for. Kan ha en av følgende 4 kategorier:
+- Kategori opplysninger
+- Rolle til pasient
+- Helsepersonell
+- Ansatte i organisasjon</documentation>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+  <simpleType name="EnumLogiskOmfang">
+    <restriction base="string">
+      <enumeration value="Angitte"/>
+      <enumeration value="Ovrige"/>
+      <enumeration value="Alle"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="EnumTypeAngivelse">
+    <restriction base="string">
+      <enumeration value="Kategori opplysninger"/>
+      <enumeration value="Rolle til pasient"/>
+      <enumeration value="Helsepersonell"/>
+      <enumeration value="Ansatte i organisasjon"/>
+    </restriction>
+  </simpleType>
+</schema>
