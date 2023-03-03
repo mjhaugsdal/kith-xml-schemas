@@ -23,27 +23,8 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>org.apache.cxf</groupId>
-                <artifactId>cxf-xjc-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <phase>generate-sources</phase>
-                        <goals>
-                            <goal>xsdtojava</goal>
-                        </goals>
-                        <configuration>
-                            <xsdOptions>
-                                <xsdOption>
-                                    <xsd>${project.basedir}/src/main/resources/ER-M22-2006-10-06.xsd</xsd>
-                                    <extensionArgs>
-                                        <extensionArg>-Ximm</extensionArg>
-                                        <extensionArg>-Ximm-builder</extensionArg>
-                                    </extensionArgs>
-                                </xsdOption>
-                            </xsdOptions>
-                        </configuration>
-                    </execution>
-                </executions>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>xmlbeans-maven-plugin</artifactId>
             </plugin>
         </plugins>
     </build>

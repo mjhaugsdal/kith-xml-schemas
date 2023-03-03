@@ -14,26 +14,32 @@ M9.22 Endrede multidosepasienter
 <!--
 Forslag til ny melding: fremmes for løsningsgruppe e-resept 
 -->
-<schema xmlns:m922="http://www.ehelse.no/xmlstds/eresept/m922/2019-03-01" xmlns:xsd="http://www.w3.org/2001/XMLSchema.xsd" xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.ehelse.no/xmlstds/eresept/m922/2019-03-01" elementFormDefault="qualified" attributeFormDefault="unqualified">
-	<element name="M922">
-		<complexType>
-			<annotation>
-				<documentation>Meldingen skal inneholde enten en liste av "Pasient", eller flagget "IngenEndring" med verdien "true"</documentation>
-			</annotation>
-			<choice>
-				<element name="Pasient" maxOccurs="unbounded">
-					<complexType>
-						<annotation>
-							<documentation>"Fnr" kan være enten fødselsnummer eller D-nummer. Det samme kan "AndreFnr"</documentation>
-						</annotation>
-						<sequence>
-							<element name="Fnr" type="string"/>
-							<element name="AndreFnr" type="string" minOccurs="0" maxOccurs="unbounded"/>
-						</sequence>
-					</complexType>
-				</element>
-				<element name="IngenEndring" type="boolean"/>
-			</choice>
-		</complexType>
-	</element>
+<schema
+        xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.ehelse.no/xmlstds/eresept/m922/2019-03-01" elementFormDefault="qualified"
+        attributeFormDefault="unqualified">
+    <element name="M922">
+        <complexType>
+            <annotation>
+                <documentation>Meldingen skal inneholde enten en liste av "Pasient", eller flagget "IngenEndring" med
+                    verdien "true"
+                </documentation>
+            </annotation>
+            <choice>
+                <element name="Pasient" maxOccurs="unbounded">
+                    <complexType>
+                        <annotation>
+                            <documentation>"Fnr" kan være enten fødselsnummer eller D-nummer. Det samme kan "AndreFnr"
+                            </documentation>
+                        </annotation>
+                        <sequence>
+                            <element name="Fnr" type="string"/>
+                            <element name="AndreFnr" type="string" minOccurs="0" maxOccurs="unbounded"/>
+                        </sequence>
+                    </complexType>
+                </element>
+                <element name="IngenEndring" type="boolean"/>
+            </choice>
+        </complexType>
+    </element>
 </schema>

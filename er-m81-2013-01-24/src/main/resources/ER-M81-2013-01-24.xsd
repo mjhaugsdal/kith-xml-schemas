@@ -8,23 +8,28 @@ M8.1 Utleveringsrapport kjernejournal
 Endringer siden 2012-10-10
 Nytt element: ReservasjonRapportFastlege
  -->
-<schema xmlns:m8="http://www.kith.no/xmlstds/eresept/m81/2012-10-10" xmlns:xsd="http://www.w3.org/2001/XMLSchema.xsd" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:fk1="http://www.kith.no/xmlstds/felleskomponent1" xmlns:m1="http://www.kith.no/xmlstds/eresept/m1/2010-05-01" xmlns:kith="http://www.kith.no/xmlstds" xmlns:ul="http://www.kith.no/xmlstds/eresept/utlevering/2010-05-01" targetNamespace="http://www.kith.no/xmlstds/eresept/m81/2012-10-10" elementFormDefault="qualified" attributeFormDefault="unqualified">
-	<import namespace="http://www.kith.no/xmlstds" schemaLocation="file:/kith.xsd"/>
-	<import namespace="http://www.kith.no/xmlstds/felleskomponent1" schemaLocation="file:/felleskomponent1.xsd"/>
-	<import namespace="http://www.kith.no/xmlstds/eresept/utlevering/2010-05-01" schemaLocation="file:/ER-Utlevering-2010-05-01.xsd"/>
-	<element name="UtleveringsrapportKjernejournal">
-		<annotation>
-			<documentation>M8.1</documentation>
-		</annotation>
-		<complexType>
-			<sequence>
-				<element ref="ul:Utlevering"/>
-				<element name="ReferanseM10" type="string"/>
-				<element name="Papirresept" type="boolean" minOccurs="0"/>
-				<element name="RefNr" type="string" minOccurs="0"/>
-				<element name="ReservasjonRapportFastlege" type="boolean" minOccurs="0"/>
-				<element name="Vergeinnsynsreservasjon" type="boolean" minOccurs="0"/>
-			</sequence>
-		</complexType>
-	</element>
+<schema
+        xmlns:ul="http://www.kith.no/xmlstds/eresept/utlevering/2010-05-01"
+        xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.kith.no/xmlstds/eresept/m81/2012-10-10" elementFormDefault="qualified"
+        attributeFormDefault="unqualified">
+    <import namespace="http://www.kith.no/xmlstds" schemaLocation="file:/kith.xsd"/>
+    <import namespace="http://www.kith.no/xmlstds/felleskomponent1" schemaLocation="file:/felleskomponent1.xsd"/>
+    <import namespace="http://www.kith.no/xmlstds/eresept/utlevering/2010-05-01"
+            schemaLocation="file:/ER-Utlevering-2010-05-01.xsd"/>
+    <element name="UtleveringsrapportKjernejournal">
+        <annotation>
+            <documentation>M8.1</documentation>
+        </annotation>
+        <complexType>
+            <sequence>
+                <element ref="ul:Utlevering"/>
+                <element name="ReferanseM10" type="string"/>
+                <element name="Papirresept" type="boolean" minOccurs="0"/>
+                <element name="RefNr" type="string" minOccurs="0"/>
+                <element name="ReservasjonRapportFastlege" type="boolean" minOccurs="0"/>
+                <element name="Vergeinnsynsreservasjon" type="boolean" minOccurs="0"/>
+            </sequence>
+        </complexType>
+    </element>
 </schema>
