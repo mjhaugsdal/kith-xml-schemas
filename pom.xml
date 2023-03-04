@@ -118,6 +118,7 @@
         <module>./tilgangsbegrensning-v1.1</module>
         <module>./pasientrelasjon-2014-03-28</module>
         <module>./personvern-felles-v1.0</module>
+        <module>./personvern-felles-v1.1</module>
         <module>./er-sko-2008-05-05</module>
         <module>./kith</module>
         <module>./kith-base64</module>
