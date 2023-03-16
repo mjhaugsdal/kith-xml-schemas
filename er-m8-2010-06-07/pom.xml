@@ -5,28 +5,28 @@
     <parent>
         <groupId>io.github.mjhaugsdal</groupId>
         <artifactId>eresept-xml-schemas</artifactId>
-        <version>1.0.0</version>
+        <version>1.0.1-SNAPSHOT</version>
     </parent>
 
     <groupId>io.github.mjhaugsdal</groupId>
     <artifactId>er-m8-2010-06-07</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
 
     <dependencies>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>kith</artifactId>
-            <version>1.0.0</version>
+            <version>1.0.1-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>felleskomponent1</artifactId>
-            <version>1.0.0</version>
+            <version>1.0.1-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-utlevering-2010-05-01</artifactId>
-            <version>1.0.0</version>
+            <version>1.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
 
