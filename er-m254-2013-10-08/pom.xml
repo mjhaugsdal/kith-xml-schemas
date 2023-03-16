@@ -5,26 +5,26 @@
     <parent>
         <groupId>io.github.mjhaugsdal</groupId>
         <artifactId>eresept-xml-schemas</artifactId>
-        <version>2.0.0</version>
+        <version>2.0.1-SNAPSHOT</version>
     </parent>
     <artifactId>er-m254-2013-10-08</artifactId>
-    <version>2.0.0</version>
+    <version>2.0.1-SNAPSHOT</version>
 
     <dependencies>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-kritiskinformasjon-2013-04-25</artifactId>
-            <version>2.0.0</version>
+            <version>2.0.1-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>felleskomponent1</artifactId>
-            <version>2.0.0</version>
+            <version>2.0.1-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>kith</artifactId>
-            <version>2.0.0</version>
+            <version>2.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
 
