@@ -13,9 +13,9 @@
         <maven.compiler.target>${version.java}</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <immutable-plugin.version>2.0.0</immutable-plugin.version>
+        <immutable-plugin.version>2.0.2</immutable-plugin.version>
         <cxf-plugin.version>4.0.0</cxf-plugin.version>
-        <jakarta.xml-bind-api.version>4.0.0</jakarta.xml-bind-api.version>
+        <jakarta.xml-bind-api.version>4.0.1</jakarta.xml-bind-api.version>
     </properties>
 
     <modules>
