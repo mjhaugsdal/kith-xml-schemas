@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2021 (x64) (http://www.altova.com) by Norsk Helsenett SF (Norsk Helsenett SF (FACTOR)) -->
+<!-- 
+eResept versjon 2.5
+ReseptUtvidelse extension/1
+2022-06-16
+-->
+<xs:schema xmlns:m1ext="http://www.kith.no/xmlstds/eresept/m1/2013-10-08/extension/1" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" xmlns:kith="http://www.kith.no/xmlstds" targetNamespace="http://www.kith.no/xmlstds/eresept/m1/2013-10-08/extension/1" elementFormDefault="qualified" attributeFormDefault="unqualified" vc:minVersion="1.1">
+	<xs:import namespace="http://www.kith.no/xmlstds" schemaLocation="../../../../kith/src/main/resources/kith.xsd"/>
+	<xs:element name="ReseptUtvidelse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="m1ext:Dosering" minOccurs="0"/>
+				<xs:element ref="m1ext:Seponering" minOccurs="0"/>
+				<xs:element ref="m1ext:Diagnose" minOccurs="0"/>
+				<xs:any processContents="skip" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="version" type="xs:string"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Dosering">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ForholdsregelInntak" type="kith:CV" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element name="Doseringstekst" type="xs:string" minOccurs="0"/>
+				<xs:element name="Tilleggstekst" type="xs:string" minOccurs="0"/>
+				<xs:any processContents="skip" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Seponering">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Tidspunkt" type="xs:dateTime"/>
+				<xs:element name="Arsak" type="kith:CV"/>
+				<xs:element name="Merknad" type="xs:string" minOccurs="0"/>
+				<xs:any processContents="skip" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Diagnose" type="kith:CV"/>
+</xs:schema>
