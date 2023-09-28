@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
@@ -43,6 +44,11 @@
                 <artifactId>er-m1-2013-10-08</artifactId>
                 <version>2.0.1-SNAPSHOT</version>
             </dependency>
+            <!--            <dependency>-->
+            <!--                <groupId>io.github.mjhaugsdal</groupId>-->
+            <!--                <artifactId>er-m1-2013-10-08-extension-1</artifactId>-->
+            <!--                <version>2.0.1-SNAPSHOT</version>-->
+            <!--            </dependency>-->
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m3-2010-05-01</artifactId>
@@ -58,6 +64,11 @@
                 <artifactId>er-m5-2013-04-16</artifactId>
                 <version>2.0.1-SNAPSHOT</version>
             </dependency>
+            <!--            <dependency>-->
+            <!--                <groupId>io.github.mjhaugsdal</groupId>-->
+            <!--                <artifactId>er-m5-2013-04-16-extension-1</artifactId>-->
+            <!--                <version>2.0.1-SNAPSHOT</version>-->
+            <!--            </dependency>-->
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m6-2010-05-01</artifactId>
@@ -173,6 +184,11 @@
                 <artifactId>er-m251-2013-10-08</artifactId>
                 <version>2.0.1-SNAPSHOT</version>
             </dependency>
+            <!--            <dependency>-->
+            <!--                <groupId>io.github.mjhaugsdal</groupId>-->
+            <!--                <artifactId>er-m251-2013-10-08-extension-1</artifactId>-->
+            <!--                <version>2.0.1-SNAPSHOT</version>-->
+            <!--            </dependency>-->
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m25-2013-10-08</artifactId>
@@ -280,6 +296,11 @@
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
+                <artifactId>er-m91-2023-03-20</artifactId>
+                <version>2.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m912-2014-01-21</artifactId>
                 <version>2.0.1-SNAPSHOT</version>
             </dependency>
@@ -311,6 +332,11 @@
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m92-2013-10-08</artifactId>
+                <version>2.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.mjhaugsdal</groupId>
+                <artifactId>er-m92-2023-03-20</artifactId>
                 <version>2.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
@@ -501,6 +527,11 @@
             <artifactId>er-m1-2013-10-08</artifactId>
             <version>2.0.1-SNAPSHOT</version>
         </dependency>
+        <!--        <dependency>-->
+        <!--            <groupId>io.github.mjhaugsdal</groupId>-->
+        <!--            <artifactId>er-m1-2013-10-08-extension-1</artifactId>-->
+        <!--            <version>2.0.1-SNAPSHOT</version>-->
+        <!--        </dependency>-->
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m3-2010-05-01</artifactId>
@@ -516,6 +547,11 @@
             <artifactId>er-m5-2013-04-16</artifactId>
             <version>2.0.1-SNAPSHOT</version>
         </dependency>
+        <!--        <dependency>-->
+        <!--            <groupId>io.github.mjhaugsdal</groupId>-->
+        <!--            <artifactId>er-m5-2013-04-16-extension-1</artifactId>-->
+        <!--            <version>2.0.1-SNAPSHOT</version>-->
+        <!--        </dependency>-->
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m6-2010-05-01</artifactId>
@@ -631,6 +667,11 @@
             <artifactId>er-m251-2013-10-08</artifactId>
             <version>2.0.1-SNAPSHOT</version>
         </dependency>
+        <!--        <dependency>-->
+        <!--            <groupId>io.github.mjhaugsdal</groupId>-->
+        <!--            <artifactId>er-m251-2013-10-08-extension-1</artifactId>-->
+        <!--            <version>2.0.1-SNAPSHOT</version>-->
+        <!--        </dependency>-->
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m25-2013-10-08</artifactId>
@@ -733,6 +774,11 @@
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
+            <artifactId>er-m91-2023-03-20</artifactId>
+            <version>2.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m912-2014-01-21</artifactId>
             <version>2.0.1-SNAPSHOT</version>
         </dependency>
@@ -759,6 +805,11 @@
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m92-2013-10-08</artifactId>
+            <version>2.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>io.github.mjhaugsdal</groupId>
+            <artifactId>er-m92-2023-03-20</artifactId>
             <version>2.0.1-SNAPSHOT</version>
         </dependency>
         <dependency>

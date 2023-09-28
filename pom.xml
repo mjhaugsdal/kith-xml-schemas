@@ -24,11 +24,13 @@
         <module>./er-kritiskinformasjon-2013-04-25</module>
         <module>./er-m1-2010-05-01</module>
         <module>./er-m1-2013-10-08</module>
+<!--        <module>./er-m1-2013-10-08-extension-1</module>-->
         <module>./er-m2-2014-12-01</module>
         <module>./er-m2-2017-12-01</module>
         <module>./er-m3-2010-05-01</module>
         <module>./er-m5-2009-02-20</module>
         <module>./er-m5-2013-04-16</module>
+<!--        <module>./er-m5-2013-04-16-extension-1</module>-->
         <module>./er-m6-2010-05-01</module>
         <module>./er-m6-2013-10-08</module>
         <module>./er-m7-2008-05-01</module>
@@ -57,6 +59,7 @@
         <module>./er-m244-2013-10-15</module>
         <module>./er-m245-2013-10-15</module>
         <module>./er-m251-2013-10-08</module>
+<!--        <module>./er-m251-2013-10-08-extension-1</module>-->
         <module>./er-m25-2013-10-08</module>
         <module>./er-m252-2013-10-08</module>
         <module>./er-m253-2013-10-08</module>
@@ -79,6 +82,7 @@
         <module>./er-m911-2021-10-01</module>
         <module>./er-m91-2010-06-04</module>
         <module>./er-m91-2013-10-08</module>
+        <module>./er-m91-2023-03-20</module>
         <module>./er-m912-2014-01-21</module>
         <module>./er-m912-2018-07-01</module>
         <module>./er-m912-2021-10-01</module>
@@ -86,6 +90,7 @@
         <module>./er-m921-2019-03-01</module>
         <module>./er-m92-2010-05-01</module>
         <module>./er-m92-2013-10-08</module>
+        <module>./er-m92-2023-03-20</module>
         <module>./er-m922-2013-10-15</module>
         <module>./er-m922-2019-03-01</module>
         <module>./er-m93-2010-06-04</module>
