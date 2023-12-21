@@ -5,24 +5,27 @@
     <parent>
         <groupId>io.github.mjhaugsdal</groupId>
         <artifactId>eresept-xml-schemas</artifactId>
-        <version>1.1.1-SNAPSHOT</version>
+        <version>2.1.2-SNAPSHOT</version>
     </parent>
     <artifactId>er-m9na2-2023-10-01</artifactId>
-    <version>1.1.1-SNAPSHOT</version>
+    <version>2.1.2-SNAPSHOT</version>
 
     <dependencies>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>kith</artifactId>
-            <version>1.1.1-SNAPSHOT</version>
+            <version>2.1.2-SNAPSHOT</version>
         </dependency>
     </dependencies>
 
     <build>
         <plugins>
             <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>xmlbeans-maven-plugin</artifactId>
+                <groupId>org.apache.xmlbeans</groupId>
+                <artifactId>xmlbeans</artifactId>
+                <configuration>
+                    <name>m9na2.x20231001</name>
+                </configuration>
             </plugin>
         </plugins>
     </build>

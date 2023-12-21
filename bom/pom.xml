@@ -101,7 +101,7 @@
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m9na1-2023-10-01</artifactId>
-                <version>1.1.1-SNAPSHOT</version>
+                <version>2.1.2-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
@@ -111,7 +111,7 @@
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m9na2-2023-10-01</artifactId>
-                <version>1.1.1-SNAPSHOT</version>
+                <version>2.1.2-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
@@ -594,7 +594,7 @@
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m9na1-2023-10-01</artifactId>
-            <version>1.1.1-SNAPSHOT</version>
+            <version>2.1.2-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
@@ -604,7 +604,7 @@
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m9na2-2023-10-01</artifactId>
-            <version>1.1.1-SNAPSHOT</version>
+            <version>2.1.2-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
