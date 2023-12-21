@@ -38,7 +38,9 @@
         <module>./er-m8-2010-06-07</module>
         <module>./er-m8-2013-10-08</module>
         <module>./er-m9na1-2016-06-06</module>
+        <module>./er-m9na1-2023-10-01</module>
         <module>./er-m9na2-2016-10-26</module>
+        <module>./er-m9na2-2023-10-01</module>
         <module>./er-m9na3-2016-06-06</module>
         <module>./er-m9na4-2016-06-06</module>
         <module>./er-m10-2010-06-07</module>
@@ -123,6 +125,7 @@
         <module>./tilgangsbegrensning-v1.1</module>
         <module>./pasientrelasjon-2014-03-28</module>
         <module>./personvern-felles-v1.0</module>
+        <module>./personvern-felles-v1.1</module>
         <module>./er-sko-2008-05-05</module>
         <module>./kith</module>
         <module>./kith-base64</module>
