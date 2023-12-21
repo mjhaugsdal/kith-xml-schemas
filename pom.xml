@@ -4,7 +4,7 @@
 
     <groupId>io.github.mjhaugsdal</groupId>
     <artifactId>eresept-xml-schemas</artifactId>
-    <version>3.0.1-SNAPSHOT</version>
+    <version>3.1.0</version>
     <packaging>pom</packaging>
 
     <properties>
@@ -151,7 +151,7 @@
         <connection>scm:git:https://github.com/mjhaugsdal/kith-xml-schemas.git</connection>
         <url>https://github.com/mjhaugsdal/kith-xml-schemas.git</url>
         <developerConnection>scm:git:https://github.com/mjhaugsdal/kith-xml-schemas.git</developerConnection>
-      <tag>HEAD</tag>
+      <tag>eresept-xml-schemas-3.1.0</tag>
   </scm>
 
     <licenses>
