@@ -5,10 +5,10 @@
     <parent>
         <groupId>io.github.mjhaugsdal</groupId>
         <artifactId>eresept-xml-schemas</artifactId>
-        <version>4.1.1-SNAPSHOT</version>
+        <version>4.2.0</version>
     </parent>
     <artifactId>bom</artifactId>
-    <version>4.1.1-SNAPSHOT</version>
+    <version>4.2.0</version>
     <packaging>pom</packaging>
 
     <dependencyManagement>
@@ -16,32 +16,32 @@
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>tilgangsbegrensning-v1.0</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>apprec-2004-11-21</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>apprec-2012-02-15</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-kritiskinformasjon-2013-04-25</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m1-2010-05-01</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m1-2013-10-08</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
 <!--            <dependency>-->
 <!--                <groupId>io.github.mjhaugsdal</groupId>-->
@@ -51,17 +51,17 @@
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m3-2010-05-01</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m5-2009-02-20</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m5-2013-04-16</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
 <!--            <dependency>-->
 <!--                <groupId>io.github.mjhaugsdal</groupId>-->
@@ -71,127 +71,127 @@
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m6-2010-05-01</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m6-2013-10-08</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m7-2008-05-01</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m8-2010-06-07</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m8-2013-10-08</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m9na1-2016-06-06</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m9na1-2023-10-01</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m9na2-2016-10-26</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m9na2-2023-10-01</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m9na3-2016-06-06</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m9na4-2016-06-06</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m10-2010-06-07</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m10-2013-10-08</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m14-2008-12-12</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m15-2006-10-06</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m20-2010-05-01</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m20-2013-10-08</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m21-2010-05-01</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m21-2013-10-08</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m241-2009-02-20</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m242-2008-10-03</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m243-2013-10-15</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m244-2013-10-15</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m245-2013-10-15</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m251-2013-10-08</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
 <!--            <dependency>-->
 <!--                <groupId>io.github.mjhaugsdal</groupId>-->
@@ -201,307 +201,307 @@
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m25-2013-10-08</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m252-2013-10-08</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m253-2013-10-08</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m254-2013-10-08</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m261-2008-05-15</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m262-2008-05-15</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m271-2013-04-16</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m272-2013-04-16</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m273-2012-06-11</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m274-2012-06-11</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m28-2012-06-11</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m41-2006-10-06</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m42-2006-10-06</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m52-2013-12-01</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m81-2013-01-24</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m81-2013-10-08</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m911-2014-01-21</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m911-2018-07-01</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m911-2021-10-01</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m91-2010-06-04</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m91-2013-10-08</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m91-2023-03-20</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m912-2014-01-21</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m912-2018-07-01</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m912-2021-10-01</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m921-2013-10-15</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m921-2019-03-01</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m92-2010-05-01</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m92-2013-10-08</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m92-2023-03-20</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m922-2013-10-15</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m922-2019-03-01</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m93-2010-06-04</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m94-2010-07-01</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m95-2008-10-03</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m95-2015-05-01</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m95-2018-07-01</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m95-2021-02-01</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m95kj-2015-05-01</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m96-2009-03-18</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m96-2015-05-01</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m96-2018-07-01</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m96-2021-02-01</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m96kj-2015-05-01</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m97-2015-05-01</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m97-2018-07-01</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m98-2015-10-15</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-m98-2018-07-01</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-mv-2013-08-16</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-mv-2017-01-01</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-utlevering-2010-05-01</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>er-utlevering-2013-10-08</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>felleskomponent1</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>felleskomponent1.1</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>personvern-felles-v1.0</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>pasientrelasjon-2014-03-28</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>forskrivning-2010-04-01</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>forskrivning-2013-10-08</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>kith</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>kith-base64</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mjhaugsdal</groupId>
                 <artifactId>msghead-2006-05-24</artifactId>
-                <version>4.1.1-SNAPSHOT</version>
+                <version>4.2.0</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -509,32 +509,32 @@
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>tilgangsbegrensning-v1.0</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>apprec-2004-11-21</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>apprec-2012-02-15</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-kritiskinformasjon-2013-04-25</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m1-2010-05-01</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m1-2013-10-08</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
 <!--        <dependency>-->
 <!--            <groupId>io.github.mjhaugsdal</groupId>-->
@@ -544,17 +544,17 @@
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m3-2010-05-01</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m5-2009-02-20</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m5-2013-04-16</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
 <!--        <dependency>-->
 <!--            <groupId>io.github.mjhaugsdal</groupId>-->
@@ -564,127 +564,127 @@
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m6-2010-05-01</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m6-2013-10-08</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m7-2008-05-01</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m8-2010-06-07</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m8-2013-10-08</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m9na1-2016-06-06</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m9na1-2023-10-01</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m9na2-2016-10-26</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m9na2-2023-10-01</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m9na3-2016-06-06</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m9na4-2016-06-06</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m10-2010-06-07</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m10-2013-10-08</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m14-2008-12-12</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m15-2006-10-06</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m20-2010-05-01</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m20-2013-10-08</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m21-2010-05-01</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m21-2013-10-08</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m241-2009-02-20</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m242-2008-10-03</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m243-2013-10-15</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m244-2013-10-15</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m245-2013-10-15</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m251-2013-10-08</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
 <!--        <dependency>-->
 <!--            <groupId>io.github.mjhaugsdal</groupId>-->
@@ -694,267 +694,267 @@
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m25-2013-10-08</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m252-2013-10-08</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m253-2013-10-08</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m254-2013-10-08</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m261-2008-05-15</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m262-2008-05-15</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m271-2013-04-16</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m272-2013-04-16</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m273-2012-06-11</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m274-2012-06-11</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m28-2012-06-11</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m41-2006-10-06</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m42-2006-10-06</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m52-2013-12-01</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m81-2013-01-24</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m81-2013-10-08</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m911-2014-01-21</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m911-2018-07-01</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m91-2010-06-04</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m91-2013-10-08</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m91-2023-03-20</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m912-2014-01-21</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m912-2018-07-01</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m921-2013-10-15</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m921-2019-03-01</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m92-2010-05-01</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m92-2013-10-08</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m92-2023-03-20</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m922-2013-10-15</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m93-2010-06-04</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m94-2010-07-01</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m95-2008-10-03</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m95-2015-05-01</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m95-2018-07-01</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m95kj-2015-05-01</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m96-2009-03-18</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m96-2015-05-01</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m96-2018-07-01</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m96kj-2015-05-01</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m97-2015-05-01</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m97-2018-07-01</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m98-2015-10-15</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-m98-2018-07-01</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-mv-2013-08-16</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-mv-2017-01-01</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-utlevering-2010-05-01</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>er-utlevering-2013-10-08</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>felleskomponent1</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>forskrivning-2010-04-01</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>forskrivning-2013-10-08</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>kith</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>kith-base64</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>msghead-2006-05-24</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
     </dependencies>
 

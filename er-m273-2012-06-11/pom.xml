@@ -5,17 +5,17 @@
     <parent>
         <groupId>io.github.mjhaugsdal</groupId>
         <artifactId>eresept-xml-schemas</artifactId>
-        <version>4.1.1-SNAPSHOT</version>
+        <version>4.2.0</version>
     </parent>
     <artifactId>er-m273-2012-06-11</artifactId>
-    <version>4.1.1-SNAPSHOT</version>
+    <version>4.2.0</version>
 
 
     <dependencies>
         <dependency>
             <groupId>io.github.mjhaugsdal</groupId>
             <artifactId>kith</artifactId>
-            <version>4.1.1-SNAPSHOT</version>
+            <version>4.2.0</version>
         </dependency>
     </dependencies>
 
