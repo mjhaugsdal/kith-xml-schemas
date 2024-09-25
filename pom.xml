@@ -13,8 +13,8 @@
         <maven.compiler.target>${version.java}</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <version.xmlbeans>5.2.0</version.xmlbeans>
-        <version.log4j-core>2.22.0</version.log4j-core>
+        <version.xmlbeans>5.2.1</version.xmlbeans>
+        <version.log4j-core>2.24.0</version.log4j-core>
     </properties>
 
     <modules>
