@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.github.mjhaugsdal</groupId>
@@ -25,13 +26,13 @@
         <module>./er-kritiskinformasjon-2013-04-25</module>
         <module>./er-m1-2010-05-01</module>
         <module>./er-m1-2013-10-08</module>
-<!--        <module>./er-m1-2013-10-08-extension-1</module>-->
+        <!--        <module>./er-m1-2013-10-08-extension-1</module>-->
         <module>./er-m2-2014-12-01</module>
         <module>./er-m2-2017-12-01</module>
         <module>./er-m3-2010-05-01</module>
         <module>./er-m5-2009-02-20</module>
         <module>./er-m5-2013-04-16</module>
-<!--        <module>./er-m5-2013-04-16-extension-1</module>-->
+        <!--        <module>./er-m5-2013-04-16-extension-1</module>-->
         <module>./er-m6-2010-05-01</module>
         <module>./er-m6-2013-10-08</module>
         <module>./er-m7-2008-05-01</module>
@@ -62,7 +63,7 @@
         <module>./er-m244-2013-10-15</module>
         <module>./er-m245-2013-10-15</module>
         <module>./er-m251-2013-10-08</module>
-<!--        <module>./er-m251-2013-10-08-extension-1</module>-->
+        <!--        <module>./er-m251-2013-10-08-extension-1</module>-->
         <module>./er-m25-2013-10-08</module>
         <module>./er-m252-2013-10-08</module>
         <module>./er-m253-2013-10-08</module>
@@ -130,6 +131,7 @@
         <module>./kith</module>
         <module>./kith-base64</module>
         <module>./msghead-2006-05-24</module>
+        <module>./tests</module>
     </modules>
 
     <name>kith-xml-schemas</name>
@@ -151,8 +153,8 @@
         <connection>scm:git:https://github.com/mjhaugsdal/kith-xml-schemas.git</connection>
         <url>https://github.com/mjhaugsdal/kith-xml-schemas.git</url>
         <developerConnection>scm:git:https://github.com/mjhaugsdal/kith-xml-schemas.git</developerConnection>
-      <tag>HEAD</tag>
-  </scm>
+        <tag>HEAD</tag>
+    </scm>
 
     <licenses>
         <license>
