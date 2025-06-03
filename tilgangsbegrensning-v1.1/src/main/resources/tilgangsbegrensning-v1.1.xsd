@@ -7,7 +7,7 @@
   attributeFormDefault="unqualified">
   <import namespace="http://ehelse.no/xmlstds/PersonvernInnstilling/v1.1"
     schemaLocation="../../../../personvern-felles-v1.1/src/main/resources/personvern-felles-v1.1.xsd"/>
-  <import namespace="http://www.kith.no/xmlstds" schemaLocation="kith.xsd"/>
+  <import namespace="http://www.kith.no/xmlstds" schemaLocation="../../../../kith/src/main/resources/kith.xsd"/>
   <import namespace="http://www.kith.no/xmlstds/felleskomponent1"
     schemaLocation="../../../../felleskomponent1.1/src/main/resources/felleskomponent1.1.xsd"/>
   <!-- Class: Tilgangsbegrensning melding -->

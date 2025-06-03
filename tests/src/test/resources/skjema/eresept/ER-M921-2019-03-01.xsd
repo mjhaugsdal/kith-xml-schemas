@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+eResept versjon 2.5, oppdatering
+M9.21 Hent endrede mullidosepasienter
+2019-03-01
+Lagt til komprimering, 
+Endret namespace i par med M9.22
+ -->
+
+<!-- 
+eResept versjon 2.5
+M9.21 Hent endrede mullidosepasienter
+2013-10-14
+ -->
+<schema xmlns:m921="http://www.ehelse.no/xmlstds/eresept/m921/2019-03-01"  xmlns:xsd="http://www.w3.org/2001/XMLSchema.xsd" xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.ehelse.no/xmlstds/eresept/m921/2019-03-01" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<element name="M921">
+		<complexType>
+			<sequence>
+				<element name="EndringerEtter" type="dateTime">
+					<annotation>
+							<documentation>Forespørsel om liste over Multidosepasienter som har relevnate endringer i reseptformidler etter dette tidspunkt</documentation>
+					</annotation>
+				</element>
+				<element name="Komprimering" type="int" >
+					<annotation>
+							<documentation>Antall returnerte Pasienter som skal føre til at svaret blir komprimert. Hvis satt til "0" bli det ikke komprimert. </documentation>
+					</annotation>
+				</element>
+			</sequence>
+		</complexType>
+	</element>
+</schema>
