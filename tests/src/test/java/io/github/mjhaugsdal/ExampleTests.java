@@ -11,17 +11,20 @@ import java.io.IOException;
 
 public class ExampleTests {
 
+    JaxbUtils jaxbUtils = new JaxbUtils(MsgHead.class);
+
     @Test
     void test() throws IOException, JAXBException, ParserConfigurationException, SAXException {
+
         var is = ExampleTests.class.getClassLoader().getResourceAsStream("M1 Resept.xml");
         Assertions.assertNotNull(is);
         var bytes = is.readAllBytes();
-        var test = JaxbUtils.unmarshall(new String(bytes));
+        var test = jaxbUtils.unmarshall(new String(bytes), MsgHead.class);
         Assertions.assertInstanceOf(MsgHead.class, test.getValue());
 
-        var errors = JaxbUtils.validate(test);
+        var errors = jaxbUtils.validate(test);
         Assertions.assertEquals(0, errors.size());
-        var xmlTest = JaxbUtils.marshall(test);
+        var xmlTest = jaxbUtils.marshall(test);
         System.out.println(xmlTest);
 
     }
@@ -31,10 +34,10 @@ public class ExampleTests {
         var is = ExampleTests.class.getClassLoader().getResourceAsStream("M1 Resept_error.xml");
         Assertions.assertNotNull(is);
         var bytes = is.readAllBytes();
-        var test = JaxbUtils.unmarshall(new String(bytes));
+        var test = jaxbUtils.unmarshall(new String(bytes), MsgHead.class);
         Assertions.assertInstanceOf(MsgHead.class, test.getValue());
 
-        var errors = JaxbUtils.validate(test);
+        var errors = jaxbUtils.validate(test);
         Assertions.assertEquals(2, errors.size());
 
         Assertions.assertTrue(errors.get(0).contains("Forskrivningsdato") && errors.get(0).contains("is expected"));

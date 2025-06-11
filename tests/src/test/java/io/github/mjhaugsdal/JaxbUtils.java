@@ -1,12 +1,6 @@
 package io.github.mjhaugsdal;
 
-import jakarta.xml.bind.JAXBContext;
-import jakarta.xml.bind.JAXBElement;
-import jakarta.xml.bind.JAXBException;
-import jakarta.xml.bind.Marshaller;
-import jakarta.xml.bind.Unmarshaller;
-import jakarta.xml.bind.ValidationException;
-import no.kith.xmlstds.msghead._2006_05_24.MsgHead;
+import jakarta.xml.bind.*;
 import org.w3c.dom.Document;
 import org.xml.sax.ErrorHandler;
 import org.xml.sax.SAXException;
@@ -32,20 +26,27 @@ import static io.github.mjhaugsdal.SchemaResolvingUtils.resolveSchemas;
 
 public class JaxbUtils {
 
-    private static final JAXBContext jaxbContext;
-    private static final Schema schema;
+    private static JAXBContext jaxbContext;
+    private static Schema schema;
+    private final SchemaFactory schemaFactory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI); //NOSONAR
 
-
-    static {
+    public JaxbUtils(Class<?>... contextClasses) {
         try {
-            jaxbContext = JAXBContext.newInstance(MsgHead.class);
-            SchemaFactory schemaFactory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI); //NOSONAR
+            jaxbContext = JAXBContext.newInstance(contextClasses);
             schema = resolveSchemas(schemaFactory);
         } catch (JAXBException e) {
             throw new RuntimeException(e);
         }
     }
 
+    public JaxbUtils(String context) {
+        try {
+            jaxbContext = JAXBContext.newInstance(context);
+            schema = resolveSchemas(schemaFactory);
+        } catch (JAXBException e) {
+            throw new RuntimeException(e);
+        }
+    }
 
     public static class ValidationErrorHandler implements ErrorHandler {
         private final List<String> errors = new ArrayList<>();
@@ -74,15 +75,15 @@ public class JaxbUtils {
         }
     }
 
-    public static JAXBElement<MsgHead> unmarshall(String xmlText) throws JAXBException {
+    public JAXBElement<?> unmarshall(String xmlText, Class<?> clazz) throws JAXBException {
         Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
-        return unmarshaller.unmarshal(new StreamSource(new ByteArrayInputStream(xmlText.getBytes(StandardCharsets.UTF_8))), MsgHead.class);
+        return unmarshaller.unmarshal(new StreamSource(new ByteArrayInputStream(xmlText.getBytes(StandardCharsets.UTF_8))), clazz);
     }
 
-    public static String marshall(JAXBElement<MsgHead> msgHead) throws JAXBException {
+    public String marshall(JAXBElement<?> jaxbElement) throws JAXBException {
         StringWriter sw = new StringWriter();
         Marshaller marshaller = jaxbContext.createMarshaller();
-        marshaller.marshal(msgHead, sw);
+        marshaller.marshal(jaxbElement, sw);
         return sw.toString();
     }
 
@@ -92,7 +93,7 @@ public class JaxbUtils {
      * @throws ValidationException if exception occurs
      */
     @SuppressWarnings("")
-    public static List<String> validate(String xml) throws ValidationException {
+    public List<String> validate(String xml) throws ValidationException {
         try {
             DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
             documentBuilderFactory.setNamespaceAware(true);
@@ -114,7 +115,7 @@ public class JaxbUtils {
      * @throws ValidationException if exception occurs
      */
     @SuppressWarnings("")
-    public static List<String> validate(JAXBElement<MsgHead> xml) throws JAXBException, ParserConfigurationException, IOException, SAXException {
+    public List<String> validate(JAXBElement<?> xml) throws JAXBException, ParserConfigurationException, IOException, SAXException {
         DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
         documentBuilderFactory.setNamespaceAware(true);
         DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();
